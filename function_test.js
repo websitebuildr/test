@@ -22,7 +22,10 @@ function storeData() {
         msg:document.getElementById('message').value
     })
     .then((doc) => {
-        console.log("Document written with ID: ", doc.id);
+//         console.log("Document written with ID: ", doc.id);
+        var alert = "Your feedback has been submitted with the id : "+doc.id
+        alert(alert);
+        location.reload()
         // alert("Message has been sent to our staff with your Discord ID : ", doc.id)
     })
     .catch((error) => {
